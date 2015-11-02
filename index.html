@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -14,46 +13,70 @@
           media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet"
           media="screen,projection"/>
-
-    <link id="top-file" href="top.html" rel="import">
 </head>
 <body>
+<!-- Top navigation bar -->
+<nav class="blue" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Mariano Tepper</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="#">Media coverage</a></li>
+            <li><a href="#">Curriculum Vitae</a></li>
+        </ul>
 
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="#">Media coverage</a></li>
+            <li><a href="#">Curriculum Vitae</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                class="material-icons">menu</i></a>
+    </div>
+</nav>
 
-	<script>
-		var getImport  = document.querySelector('#top-file');
-		var getContent = getImport.import.querySelector('#content');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-
-
+<!-- Page content starts here -->
 <div class="container">
-<div class="row center">
-    <div class="col s12 m6">
-        <div class="card">
-            <div class="card-image">
-                <img src="images/mariano_tepper.jpg">
-                <span class="card-title">About me</span>
-            </div>
-            <div class="card-content">
-                <p class="left-align">I'm a researcher interested in image processing and analysis, computer vision, pattern recognition,
-                    machine learning, optimization, and network analysis, and their application to medicine,
-                    social sciences, and art.
-                </p>
+    <div class="row center">
+        <div class="col s6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/mariano_tepper.jpg">
+                    <span class="card-title">About me</span>
+                </div>
+                <div class="card-content">
+                    <p class="left-align">I'm a researcher interested in image
+                        processing and analysis, computer vision, pattern
+                        recognition,
+                        machine learning, optimization, and network analysis,
+                        and their application to medicine,
+                        social sciences, and art.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+<!-- Page content ends here -->
 
+<!-- Footer -->
 <footer class="page-footer blue ">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">About me</h5>
 
-                <p class="grey-text text-lighten-4">I'm a researcher interested in image processing and analysis, computer vision, pattern recognition,
-                    machine learning, optimization, and network analysis, and their application to medicine,
+                <p class="grey-text text-lighten-4">I'm a researcher interested
+                    in image processing and analysis, computer vision, pattern
+                    recognition,
+                    machine learning, optimization, and network analysis, and
+                    their application to medicine,
                     social sciences, and art.</p>
 
 
@@ -61,9 +84,21 @@
             <div class="col l4 s10">
                 <h5 class="white-text">Contact</h5>
                 <ul>
-                    <li><div class="white-text">mariano.tepper [at] duke [dot] edu</div></li>
-                    <li><div class="white-text">mtepper [at] dc [dot] uba [dot] ar</div></li>
-                    <li><div class="white-text">marianotepper [at] gmail [dot] com</div></li>
+                    <li>
+                        <div class="white-text">mariano.tepper [at] duke [dot]
+                            edu
+                        </div>
+                    </li>
+                    <li>
+                        <div class="white-text">mtepper [at] dc [dot] uba [dot]
+                            ar
+                        </div>
+                    </li>
+                    <li>
+                        <div class="white-text">marianotepper [at] gmail [dot]
+                            com
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
