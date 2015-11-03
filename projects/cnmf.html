@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Mariano Tepper</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="http://marianotepper.github.io/css/materialize.css"
+          type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+</head>
+<body>
+<!-- Top navigation bar -->
+<nav class="blue" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="http://marianotepper.github.io/"
+           class="brand-logo">Mariano Tepper</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="http://marianotepper.github.io/">Home</a></li>
+            <li><a href="http://marianotepper.github.io/publications.html">Publications</a>
+            </li>
+            <li><a href="http://marianotepper.github.io/code.html">Code</a></li>
+            <li>
+                <a href="http://marianotepper.github.io/teaching.html">Teaching</a>
+            </li>
+            <li><a href="http://marianotepper.github.io/media.html">Media
+                coverage</a></li>
+            <li><a href="http://marianotepper.github.io/cv.html">Curriculum
+                Vitae</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="http://marianotepper.github.io/">Home</a></li>
+            <li><a href="http://marianotepper.github.io/publications.html">Publications</a>
+            </li>
+            <li><a href="http://marianotepper.github.io/code.html">Code</a></li>
+            <li>
+                <a href="http://marianotepper.github.io/teaching.html">Teaching</a>
+            </li>
+            <li><a href="http://marianotepper.github.io/media.html">Media
+                coverage</a></li>
+            <li><a href="http://marianotepper.github.io/cv.html">Curriculum
+                Vitae</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page content starts here -->
+<div class="container">
+    <h4 class="blue-text text-darken-2">Compressed nonnegative matrix
+        factorization is fast and accurate</h4>
+    <span class="blue-text text-darken-2">Mariano Tepper, Guillermo Sapiro</span>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <p class="left-align">Nonnegative matrix factorization (NMF) has
+                    an established reputation as a useful data analysis
+                    technique in numerous applications. However, its usage in
+                    practical situations is undergoing challenges in recent
+                    years. The fundamental factor to this is the increasingly
+                    growing size of the datasets available and needed in the
+                    information sciences. To address this, in this work we
+                    propose to use structured random compression, that is,
+                    random projections that exploit the data structure, for two
+                    NMF variants: classical and separable. In separable NMF
+                    (SNMF) the left factors are a subset of the columns of the
+                    input matrix. We present suitable formulations for each
+                    problem, dealing with different representative algorithms
+                    within each one. We show that the resulting compressed
+                    techniques are faster than their uncompressed variants,
+                    vastly reduce memory demands, and do not encompass any
+                    significant deterioration in performance. The proposed
+                    structured random projections for SNMF allow to deal with
+                    arbitrarily shaped large matrices, beyond the standard limit
+                    of tall-and-skinny matrices, granting access to very
+                    efficient computations in this general setting. We accompany
+                    the algorithmic presentation with theoretical foundations
+                    and numerous and diverse examples, showing the suitability
+                    of the proposed approaches.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="http://arxiv.org/abs/1505.04650"><i
+                        class="material-icons">description</i></a>
+                <a href="http://goo.gl/PKWTdp">NMF <i
+                        class="material-icons">code</i></a>
+                <a href="https://github.com/marianotepper/csnmf">SNMF <i
+                        class="material-icons">code</i></a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">Biclustering a bipartite graph: The Marvel social network</div>
+          <div class="collapsible-body">
+              <p>The network links Marvel characters and the Marvel comic books in which they appear, and exhibits most characteristics of “real-life” collaboration networks [1]. It can be represented as an \( m \times n \) matrix, where  and  are the number of characters and comics, respectively. We bicluster this matrix using NMF with , aiming at obtaining 10 very representative groups of characters appearing jointly in different comic books. The ith bicluster (i = 1...10) is formed by the ith column of X and the ith row of Y (small entries were set to zero, as explained in the manuscript). The radar plots represent the coefficients of these vectors.</p>
+          </div>
+        </li>
+    </ul>
+
+</div>
+<!-- Page content ends here -->
+
+<!-- Footer -->
+<footer class="page-footer blue ">
+    <div class="container">
+        <div class="row">
+            <div class="col l8 s8">
+                <h5 class="white-text">About me</h5>
+
+                <p class="grey-text text-lighten-4">I'm a researcher
+                    interested
+                    in image processing and analysis, computer vision,
+                    pattern
+                    recognition,
+                    machine learning, optimization, and network analysis,
+                    and
+                    their application to medicine,
+                    social sciences, and art.</p>
+
+
+            </div>
+            <div class="col l4 s4">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                    <li>
+                        <div class="white-text">mariano.tepper [at] duke
+                            [dot]
+                            edu
+                        </div>
+                    </li>
+                    <li>
+                        <div class="white-text">mtepper [at] dc [dot] uba
+                            [dot]
+                            ar
+                        </div>
+                    </li>
+                    <li>
+                        <div class="white-text">marianotepper [at] gmail
+                            [dot]
+                            com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Mariano Tepper
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://marianotepper.github.io/js/materialize.js"></script>
+<script src="http://marianotepper.github.io/js/init.js"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</body>
+</html>
