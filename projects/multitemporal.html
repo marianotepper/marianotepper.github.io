@@ -9,7 +9,8 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-    <link href="/css/materialize.css" type="text/css" rel="stylesheet"
+    <link href="http://marianotepper.github.io/css/materialize.css"
+          type="text/css" rel="stylesheet"
           media="screen,projection"/>
 </head>
 <body>
@@ -38,33 +39,56 @@
 </nav>
 
 <!-- Page content starts here -->
+< class="container">
+<h4 class="blue-text text-darken-2">Multitemporal foreground detection</h4>
+    <span class="blue-text text-darken-2">Mariano Tepper, Alasdair Newson, Pablo
+        Sprechmann, Guillermo Sapiro</span>
+
 <div class="container">
-    <h4 class="blue-text text-darken-2">Multitemporal foreground detection</h4>
-    <h4 class="blue-text text-darken-2">Mariano Tepper, Alasdair Newson, Pablo Sprechmann, Guillermo Sapiro</h4>
-<div><span style="font-size:22px;line-height:28.6000003814697px"><br>
-</span></div>
-<div><span style="line-height:28.6000003814697px"><font size="2"><b>Abstract</b></font></span></div>
-<div><font face="arial, sans-serif" size="2"><span style="line-height:20.7999992370605px">A common task in video processing is the binary separation of a video’s content into either background or moving foreground. However, many situations require a foreground analysis with a finer temporal granularity, in particular for objects or people which remain immobile for a certain period of time. We propose an efficient method which detects foreground at different timescales, by exploiting the desirable theoretical and practical properties of Robust Principal Component Analysis. Our algorithm can be used in a variety of scenarios such as detecting people who have fallen in a video, or analysing the fluidity of road traffic, while avoiding costly computations needed for nearest neighbours searches or optical flow analysis. Finally, our algorithm has the useful ability to perform motion analysis without explicitly requiring computationally expensive motion estimation.</span></font></div>
-<div><span style="line-height:28.6000003814697px"><font size="2"><b>Download the paper from <a href="https://drive.google.com/file/d/0B34lxPUmn-gFTFJrS2gzVklJZE0/view?usp=sharing">here.</a></b></font></span></div>
-<div><span style="line-height:28.6000003814697px"><font size="2"><b>Download the source code from&nbsp;<a href="https://drive.google.com/uc?export=download&amp;id=0B34lxPUmn-gFZFBjMzNES2E0aGs">here.</a></b></font><br>
-</span></div>
-<div><span style="font-size:22px;line-height:28.6000003814697px"><br>
-</span></div>
-<div><font color="#0b5394" size="4"><b>Foreground detection results</b></font></div>
-<div><font color="#0b5394" size="4"><b><br>
-</b></font></div>
-<div><font color="#0b5394" size="4"><b>
-<div><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Junction%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=Wj54PDXf1yGh8Fju25FSyuq4S4M" data-origsrc="-dOBtSvuX8c" data-type="youtube" data-props="align:center;borderTitle:Junction;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;" width="480" height="270" style="display:block;margin:5px auto;text-align:center;"></div>
-<br>
-</b></font></div>
-<div><font color="#0b5394" size="4"><b>
-<div><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Desert%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=B-rjTMZOmtCu-yiAMm8MHlbX72Q" data-origsrc="a-nMMFtcQao" data-type="youtube" data-props="align:center;borderTitle:Desert;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;" width="480" height="270" style="display:block;margin:5px auto;text-align:center;"></div>
-<br>
-</b></font></div>
-<div><font color="#0b5394" size="4"><b>
-<div><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Falling+Person%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=uJXwJYpKTSfkPExq0wuF-Ee9G7k" data-origsrc="7eEmmmLON1w" data-type="youtube" data-props="align:center;borderTitle:Falling Person;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;" width="480" height="270" style="display:block;margin:5px auto;text-align:center;"></div>
-<br>
-</b></font></div>
+    <div class="card">
+        <div class="card-content">
+            <p class="left-align">A common task in video processing is the
+                binary separation of a video’s content into either background or
+                moving foreground. However, many situations require a foreground
+                analysis with a finer temporal granularity, in particular for
+                objects or people which remain immobile for a certain period of
+                time. We propose an efficient method which detects foreground at
+                different timescales, by exploiting the desirable theoretical
+                and practical properties of Robust Principal Component Analysis.
+                Our algorithm can be used in a variety of scenarios such as
+                detecting people who have fallen in a video, or analysing the
+                fluidity of road traffic, while avoiding costly computations
+                needed for nearest neighbours searches or optical flow analysis.
+                Finally, our algorithm has the useful ability to perform motion
+                analysis without explicitly requiring computationally expensive
+                motion estimation.
+            </p>
+        </div>
+        <div class="card-action">
+            <a href="http://marianotepper.github.io/papers/Multitemporal_detection.pdf"><i
+                    class="material-icons">description</i></a>
+            <a href="http://marianotepper.github.io/code/Multitemporal_detection.tar.gz"><i
+                    class="material-icons">code</i></a>
+        </div>
+    </div>
+
+    <img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Junction%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=Wj54PDXf1yGh8Fju25FSyuq4S4M"
+         data-origsrc="-dOBtSvuX8c" data-type="youtube"
+         data-props="align:center;borderTitle:Junction;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;"
+         width="480" height="270"
+         style="display:block;margin:10px auto;text-align:center;">
+
+    <img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Desert%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=B-rjTMZOmtCu-yiAMm8MHlbX72Q"
+         data-origsrc="a-nMMFtcQao" data-type="youtube"
+         data-props="align:center;borderTitle:Desert;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;"
+         width="480" height="270"
+         style="display:block;margin:10px auto;text-align:center;">
+
+    <img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D479'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Falling+Person%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D480'%3D267'dim'%5C%3D10'%3D10'%3D480'%3D267'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=uJXwJYpKTSfkPExq0wuF-Ee9G7k"
+         data-origsrc="7eEmmmLON1w" data-type="youtube"
+         data-props="align:center;borderTitle:Falling Person;height:270;showBorder:false;showBorderTitle:false;width:480;wrap:false;"
+         width="480" height="270"
+         style="display:block;margin:10px auto;text-align:center;">
 
 </div>
 <!-- Page content ends here -->
