@@ -14,8 +14,11 @@
           media="screen,projection"/>
 
     <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     <script type="text/javascript" async
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
     </script>
 </head>
 <body>
@@ -102,10 +105,24 @@
 
     <ul class="collapsible" data-collapsible="accordion">
         <li>
-          <div class="collapsible-header">Biclustering a bipartite graph: The Marvel social network</div>
-          <div class="collapsible-body">
-              <p>The network links Marvel characters and the Marvel comic books in which they appear, and exhibits most characteristics of “real-life” collaboration networks [1]. It can be represented as an \( m \times n \) matrix, where  and  are the number of characters and comics, respectively. We bicluster this matrix using NMF with , aiming at obtaining 10 very representative groups of characters appearing jointly in different comic books. The ith bicluster (i = 1...10) is formed by the ith column of X and the ith row of Y (small entries were set to zero, as explained in the manuscript). The radar plots represent the coefficients of these vectors.</p>
-          </div>
+            <div class="collapsible-header">Biclustering a bipartite graph: The
+                Marvel social network
+            </div>
+            <div class="collapsible-body">
+                <p>The network links Marvel characters and the Marvel comic
+                    books in which they appear, and exhibits most
+                    characteristics of “real-life” collaboration networks [1].
+                    It can be represented as an $m \times n$ matrix, where
+                    $m = 6445$ and $n = 12850$ are the number of
+                    characters and comics, respectively. We bicluster this
+                    matrix using NMF with $r = 10$, aiming at obtaining 10
+                    very representative groups of characters appearing jointly
+                    in different comic books. The ith bicluster ($i = 1...10$)
+                    is formed by the $i$th column of $\mathbf{X}$ and the ith
+                    row of $\mathbf{Y}$ (small entries were set to zero, as
+                    explained in the manuscript). The radar plots represent the
+                    coefficients of these vectors.</p>
+            </div>
         </li>
     </ul>
 
