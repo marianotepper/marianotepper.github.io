@@ -236,7 +236,11 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            &copy; <%= DateTime.Now.Year.ToString() %> Copyright Mariano Tepper
+            &copy; Copyright
+            <script language="JavaScript" type="text/javascript">
+                document.write(new Date().getFullYear())
+            </script>
+            Mariano Tepper
         </div>
     </div>
 </footer>
