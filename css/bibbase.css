@@ -48,3 +48,7 @@
 .bibbase_group_body {
     margin-left: 20px;
 }
+
+#presentations  .bibtex{
+    display: none;
+}

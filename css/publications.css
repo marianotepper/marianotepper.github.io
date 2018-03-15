@@ -1,15 +1,3 @@
-.collection .collection-item.paper {
-      position: relative; }
-      .collection .collection-item.paper p {
-        width: 90%;
-        margin: 0; }
-      .collection .collection-item.paper .secondary-content {
-        position: absolute;
-        top: 16px;
-        right: 16px; }
-      .collection .collection-item.paper .title {
-        font-weight: bold; }
-
 .tabs .tab a {
   color: #2196F3; }
   .tabs .tab a:hover {
