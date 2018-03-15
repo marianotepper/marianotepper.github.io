@@ -20,11 +20,6 @@
     content: "";
 }
 
-.bibbase_icon_text:after {
-    /*font-family: FontAwesome;*/
-    content: "";
-}
-
 #bibbase_header a {
     text-decoration: none;
 }
