@@ -17,12 +17,7 @@
 
 .bibbase_icon_text:before {
     /*!*font-family: FontAwesome;*!*/
-    content: "\f08e  link ";
-}
-
-.bibbase_icon_text:before {
-    /*!*font-family: FontAwesome;*!*/
-    content: "\f08e  link ";
+    content: "";
 }
 
 #bibbase_header a {
