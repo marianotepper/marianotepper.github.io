@@ -1,3 +1,20 @@
+.bibbase_paper_author{
+  display: block;
+  /*font-size: 1.1em;*/
+}
+
+.bibbase_paper_title a{
+	font-weight: bold;
+}
+
+/*span.dontprint img {
+    display: none !important;
+}*/
+
+.bibbase_icon_text:before {
+    /*font-family: FontAwesome;*/
+    content: "\f08e  link ";
+}
 
 #bibbase_header a {
     text-decoration: none;
@@ -11,14 +28,14 @@
 
 .bibbase_group {
     /* background-color: #D0D0E0; */
-    /*background-color: #FFFFFF;*/
+    background-color: #FFFFFF;
     font-style: normal;
     font-size: larger;
     text-shadow: 0px 0px 3px #FFFFFF;
     border-radius: 4px 4px 4px 4px;
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px;
-    padding: 5px 40px 5px;
+    padding: 5px 2px 5px;
     margin-top: 10px;
     margin-bottom: 5px;
     cursor: pointer;
@@ -46,14 +63,14 @@ img.bibbase_icon {
 
 img.bibbase_icon:hover {
     filter: none;
-    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
 }
 
 
 
-/* span.bibbase_icon_text { */
-/*     display: none; */
-/* } */
+ /*span.bibbase_icon_text {*/
+     /*display: none;*/
+ /*}*/
 
 .bibbase_code {
     width: 80%
@@ -85,7 +102,7 @@ img.bibbase_icon:hover {
 
 .bibbase.well {
     margin: 20px;
-    overflow-wrap: break-word;
+    /*overflow-wrap: break-word;*/
 }
 
 .bibbase.link {
