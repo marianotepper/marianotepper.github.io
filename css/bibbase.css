@@ -15,10 +15,15 @@
     display: none !important;
 }*/
 
-/*.bibbase_icon_text:before {*/
+.bibbase_icon_text:before {
     /*!*font-family: FontAwesome;*!*/
-    /*content: "\f08e  link ";*/
-/*}*/
+    content: "\f08e  link ";
+}
+
+.bibbase_icon_text:before {
+    /*!*font-family: FontAwesome;*!*/
+    content: "\f08e  link ";
+}
 
 #bibbase_header a {
     text-decoration: none;
