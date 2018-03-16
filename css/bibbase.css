@@ -52,3 +52,7 @@
 #presentations  .bibtex{
     display: none;
 }
+
+#presentations  .dropdown-toggle{
+    display: none;
+}
