@@ -53,6 +53,6 @@
     display: none;
 }
 
-#presentations  .dropdown-toggle{
+#presentations #menu_dropdown .dropdown-toggle{
     display: none;
 }
